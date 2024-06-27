@@ -8,7 +8,7 @@ def get_data_SBHAR(batch_size, test_user, args=None):
     assert args.dataset == 'SBHAR'
 
     adapt_ratio = 0.5
-    path = '/home/rox/data/' + args.dataset + '/processed_data'
+    path = '/home/yangz2/code/SWL-Adapt/dataset' + args.dataset + '/uci-har-dataset/uci-har-dataset'
 
     window = args.window_S
     N_channels = args.N_channels_S
