@@ -13,7 +13,7 @@ def preprocess_SBHAR(dataset_path, window, stride):
     load_dataset_path = dataset_path + 'RawData/'
     channel_num=3
 
-    label_data = np.array(pd.read_csv(load_dataset_path + 'labels.txt', delim_whitespace=True, header=None))
+    label_data = np.array(pd.read_csv(load_dataset_path + 'activity_labels.txt', delim_whitespace=True, header=None))
     act_record = {}
     for exp_num in range(1,62):
         ind = np.where(label_data[:,0] == exp_num)
